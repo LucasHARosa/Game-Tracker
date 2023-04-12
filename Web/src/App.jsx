@@ -1,9 +1,16 @@
+import { ThemeProvider } from 'styled-components'
+import { defaultTheme } from "./styles/default"
+import { GlobalStyle } from './styles/global'
+import { Header } from './Components/Header'
 
 
 
 function App() {
   return (
-    <h1>Hello</h1>
+    <ThemeProvider theme={defaultTheme}>
+      <Header />
+      <GlobalStyle/>
+    </ThemeProvider>
   )
 }
 
