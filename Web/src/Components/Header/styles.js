@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const ContainerHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: flex-start;

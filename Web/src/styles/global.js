@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import styled from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -15,11 +16,16 @@ export const GlobalStyle = createGlobalStyle`
     color: ${(props) => props.theme['white']};
     -webkit-font-smoothing: antialiased;
   }
-  body, input, textarea, button, p, a {
+  body, textarea, button, p, a {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: 1rem;
     color: ${(props) => props.theme['white']};
   }
   
+`
+export const ContainerApplicaton = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `

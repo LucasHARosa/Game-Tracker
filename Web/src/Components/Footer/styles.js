@@ -1,12 +1,18 @@
 import styled from 'styled-components'
 
-export const ContainerFooter = styled.div`
+export const ContainerFooter = styled.footer`
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
   padding: 3.813rem 8.125rem;
 
   background-color: ${(props) => props.theme['blue']};
+
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+
   div:first-child{
     display: flex;
     justify-content: center;

@@ -1,14 +1,14 @@
-import { Container } from "./styles";
+import { ContainerHeader } from "./styles";
 
 export function Header() {
   return(
-    <Container>
+    <ContainerHeader>
       <img src="/Logo.svg" alt="" />
       <div>
         <p>Game&nbsp;</p>
         <p>Tracker</p>
       </div>
       
-    </Container>
+    </ContainerHeader>
   );
 }
