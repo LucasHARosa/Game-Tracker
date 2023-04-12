@@ -8,10 +8,7 @@ export const ContainerFooter = styled.footer`
 
   background-color: ${(props) => props.theme['blue']};
 
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  width: 100%;
+  
 
   div:first-child{
     display: flex;

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const ContainerMain = styled.main`
   display: flex;
   flex-direction: column;
-  padding: 5.938rem 8.125rem 2.75rem;
+  padding: 2.813rem 8.125rem 2.75rem;
 `
 
 export const ContainerPesquisa = styled.div`
@@ -72,6 +72,10 @@ export const OrdinationSelect = styled.select`
 `
 
 export const DivCards = styled.div`
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
 `
 
 

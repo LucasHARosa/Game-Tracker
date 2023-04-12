@@ -4,16 +4,18 @@ import { GlobalStyle, ContainerApplicaton } from './styles/global'
 import { Header } from './Components/Header'
 import { Footer } from './Components/Footer'
 import { Main } from './Components/Main'
-
+import { CardContextProvider } from './contexts/CardContext'
 
 
 function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <ContainerApplicaton>
-        <Header />
-        <Main />
-        <Footer/>
+        <CardContextProvider>
+          <Header />
+          <Main />
+          <Footer/>
+        </CardContextProvider>
       </ContainerApplicaton>
       <GlobalStyle/>
     </ThemeProvider>
