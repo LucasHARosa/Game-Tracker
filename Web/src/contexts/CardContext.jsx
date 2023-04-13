@@ -82,23 +82,22 @@ export function CardContextProvider({ children }) {
   }
 
   // Filtra os cards pelo titulo
-  // function FilterTitle(title) {
-  //   const newCard = [...cardExternal].filter((card) => {
-  //     return card.title.toLowerCase().includes(title.toLowerCase())
-  //   })
-  //   setCards(newCard)
-  // }
+  function FilterTitle(title) {
+    const newCard = cardExternal.filter((card) => {
+      return card.title.toLowerCase().includes(title.toLowerCase())
+    })
+    setCards(newCard)
+  }
 
   return (
     <CardContext.Provider
       value={{
         cards,
-        cardExternal,
+        FilterTitle,
         OrderAlfabetic,
         OrderPrice,
         OrderPriceDesc,
         OrderDiscount,
-        setCards,
       }}
     >
       {children}

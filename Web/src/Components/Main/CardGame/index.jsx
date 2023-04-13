@@ -11,6 +11,10 @@ import {
 export function CardGame(props) {
   let descont = ''
 
+  // Verifica se o jogo está em promoção
+  // Se sim, retorna o preço normal e o preço em promoção
+  // Se não, retorna o preço normal
+  // Se o preço for 0, retorna o preço como grátis
   function handlePrice() {
     if (props.salePrice === null) {
       descont = props.normalPrice.toString()
@@ -36,6 +40,7 @@ export function CardGame(props) {
     }
   }
 
+  // Verifica se o jogo tem imagem
   function handleImg() {
     if (props.thumb === null) {
       return <img src="/sem-imagem.png" alt="" />
