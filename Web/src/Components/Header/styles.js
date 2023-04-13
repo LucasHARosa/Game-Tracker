@@ -8,21 +8,21 @@ export const ContainerHeader = styled.header`
   padding: 0.5rem 8.125rem;
   gap: 0.75rem;
 
-  background-color: ${(props) => props.theme['blue']};
-  img{
+  background-color: ${(props) => props.theme.blue};
+  img {
     width: 2rem;
     height: 2rem;
   }
-  div{
+  div {
     display: flex;
     flex-direction: row;
-    p:nth-child(1){
+    p:nth-child(1) {
       font-family: 'Roboto';
       font-style: normal;
       font-weight: 300;
       font-size: 1.5rem;
     }
-    p:nth-child(2){
+    p:nth-child(2) {
       font-family: 'Roboto';
       font-style: normal;
       font-weight: 700;

@@ -1,16 +1,21 @@
-import { ContainerCard, ContainerInfo, Title, ContainerButtons, ButtonCompra, ButtonDetails, PriceDiv } from "./styles";
+import {
+  ContainerCard,
+  ContainerInfo,
+  Title,
+  ContainerButtons,
+  ButtonCompra,
+  ButtonDetails,
+  PriceDiv,
+} from './styles'
 
-export function CardGame (props){
-
+export function CardGame(props) {
   let descont = ''
 
-  function handlePrice(){
-    if(props.salePrice === null){
+  function handlePrice() {
+    if (props.salePrice === null) {
       descont = props.normalPrice.toString()
-      return (
-        <p>${props.normalPrice}</p>
-      )
-    }else if (props.salePrice === 0){
+      return <p>${props.normalPrice}</p>
+    } else if (props.salePrice === 0) {
       descont = 'GRÁTIS'
       return (
         <>
@@ -18,9 +23,10 @@ export function CardGame (props){
           <p>${props.normalPrice}</p>
         </>
       )
-    }else{
-      const percent = (props.normalPrice - props.salePrice) / props.normalPrice * 100
-      descont = ("-" + percent.toFixed(0).toString() + "%")
+    } else {
+      const percent =
+        ((props.normalPrice - props.salePrice) / props.normalPrice) * 100
+      descont = '-' + percent.toFixed(0).toString() + '%'
       return (
         <>
           <p>${props.salePrice}</p>
@@ -30,17 +36,23 @@ export function CardGame (props){
     }
   }
 
+  function handleImg() {
+    if (props.thumb === null) {
+      return <img src="/sem-imagem.png" alt="" />
+    } else {
+      return <img src={props.thumb} alt="" />
+    }
+  }
+
   return (
     <ContainerCard>
-      <img src={props.thumb} alt="" />
+      {handleImg()}
       <ContainerInfo>
         <Title>{props.title}</Title>
         <ContainerButtons>
           <ButtonDetails>DETALHES</ButtonDetails>
           <div>
-            <PriceDiv>
-              {handlePrice()}
-            </PriceDiv>
+            <PriceDiv>{handlePrice()}</PriceDiv>
             <ButtonCompra>{descont}</ButtonCompra>
           </div>
         </ContainerButtons>
