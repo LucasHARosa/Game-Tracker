@@ -6,9 +6,13 @@ import {
   ButtonCompra,
   ButtonDetails,
   PriceDiv,
+  ContainerDetails,
 } from './styles'
 
+import { useState } from 'react'
+
 export function CardGame(props) {
+  const [showDetails, setShowDetails] = useState(false)
   let descont = ''
 
   // Verifica se o jogo está em promoção
@@ -55,13 +59,26 @@ export function CardGame(props) {
       <ContainerInfo>
         <Title>{props.title}</Title>
         <ContainerButtons>
-          <ButtonDetails>DETALHES</ButtonDetails>
+          <ButtonDetails onClick={() => setShowDetails(!showDetails)}>
+            DETALHES
+          </ButtonDetails>
           <div>
             <PriceDiv>{handlePrice()}</PriceDiv>
             <ButtonCompra>{descont}</ButtonCompra>
           </div>
         </ContainerButtons>
       </ContainerInfo>
+      {showDetails && (
+        <ContainerDetails>
+          <p>Detalhes do Game:</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque porro
+            enim facilis distinctio animi, explicabo quibusdam aliquid amet
+            dignissimos non quos repellendus magni sint quod odio, quam
+            recusandae, modi deleniti.
+          </p>
+        </ContainerDetails>
+      )}
     </ContainerCard>
   )
 }

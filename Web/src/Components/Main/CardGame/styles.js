@@ -9,6 +9,7 @@ export const ContainerCard = styled.div`
   width: 23.75rem;
   img {
     width: 100%;
+    height: 8.91rem;
     border-radius: 0.5rem 0.5rem 0 0;
   }
 `
@@ -50,14 +51,25 @@ const BaseButton = styled.button`
   font-size: 1.125rem;
 
   cursor: pointer;
+
+  transition: background-color 0.1s;
+  &:focus {
+    box-shadow: none;
+  }
 `
 
 export const ButtonDetails = styled(BaseButton)`
   background-color: ${(props) => props.theme.pink};
+  &:hover {
+    background-color: ${(props) => props.theme['pink-hover']};
+  }
 `
 
 export const ButtonCompra = styled(BaseButton)`
   background-color: ${(props) => props.theme.green};
+  &:hover {
+    background-color: ${(props) => props.theme['green-hover']};
+  }
 `
 
 export const PriceDiv = styled.div`
@@ -78,5 +90,36 @@ export const PriceDiv = styled.div`
   p:first-child {
     font-weight: 700;
     font-size: 1.125rem;
+  }
+`
+
+export const ContainerDetails = styled.div`
+  z-index: 1;
+  position: absolute;
+  width: 23.75rem;
+  height: 8.91rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 1rem;
+
+  background-color: ${(props) => props.theme.blue};
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.5rem;
+
+  p:first-child {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.125rem;
+  }
+  p:last-child {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 1rem;
+    color: ${(props) => props.theme.gray};
   }
 `

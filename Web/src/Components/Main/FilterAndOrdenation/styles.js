@@ -69,6 +69,7 @@ export const OrdinationSelect = styled.select`
   font-weight: 100;
   font-size: 1.125rem;
 
+  cursor: pointer;
   &:focus {
     box-shadow: none;
   }

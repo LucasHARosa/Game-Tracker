@@ -5,4 +5,6 @@ export const defaultTheme = {
   pink: '#C70160',
   green: '#16857B',
   gray: '#b1b0b0',
+  'green-hover': '#0F5E5A',
+  'pink-hover': '#A6004F',
 }

@@ -42,7 +42,7 @@ export const LoadButton = styled.div`
     font-size: 1.125rem;
     font-weight: 100;
     color: ${(props) => props.theme.gray};
-    &:hover {
+    &:not(:disabled):hover {
       color: ${(props) => props.theme.white};
       box-shadow: 0 0 2px ${(props) => props.theme['blue-light']};
     }
