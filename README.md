@@ -25,3 +25,10 @@ Projeto desenvolvido para um processo seletivo. Consiste em um catálogo de jogo
 <p align="center">
   <img height="400" src="./Imagens/Game_tracker_web.png">
 </p>
+
+# Mobile
+
+Em construção...
+<p align="center">
+  <img src="https://media.giphy.com/media/xZsLh7B3KMMyUptD9D/giphy.gif">
+</p>
