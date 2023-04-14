@@ -11,8 +11,10 @@ function App() {
     <ThemeProvider theme={defaultTheme}>
       <ContainerApplicaton>
         <CardContextProvider>
-          <Header />
-          <Main />
+          <div>
+            <Header />
+            <Main />
+          </div>
           <Footer />
         </CardContextProvider>
       </ContainerApplicaton>

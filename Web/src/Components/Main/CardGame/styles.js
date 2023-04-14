@@ -53,9 +53,6 @@ const BaseButton = styled.button`
   cursor: pointer;
 
   transition: background-color 0.1s;
-  &:focus {
-    box-shadow: none;
-  }
 `
 
 export const ButtonDetails = styled(BaseButton)`

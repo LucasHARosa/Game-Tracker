@@ -29,4 +29,7 @@ export const ContainerHeader = styled.header`
       font-size: 1.5rem;
     }
   }
+  @media (max-width: 1042px) {
+    justify-content: center;
+  }
 `

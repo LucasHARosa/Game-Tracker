@@ -7,6 +7,7 @@ export const ContainerFooter = styled.footer`
   padding: 3.813rem 8.125rem;
 
   background-color: ${(props) => props.theme.blue};
+  bottom: 0;
 
   div:first-child {
     display: flex;
@@ -24,6 +25,8 @@ export const ContainerFooter = styled.footer`
     font-style: normal;
     font-weight: 300;
     font-size: 0.875rem;
+
+    color: ${(props) => props.theme.gray};
   }
   div:last-child {
     display: flex;
@@ -36,6 +39,24 @@ export const ContainerFooter = styled.footer`
       font-style: normal;
       font-weight: 700;
       font-size: 0.875rem;
+    }
+  }
+  @media (max-width: 1042px) {
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 0.5rem;
+    img {
+      width: 1.375rem;
+      height: 1.375rem;
+    }
+    p {
+      font-size: 0.625rem;
+      text-align: center;
+    }
+    div:last-child {
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
     }
   }
 `

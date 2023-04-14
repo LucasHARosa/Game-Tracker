@@ -7,6 +7,10 @@ export const ContainerPesquisa = styled.div`
   align-items: center;
 
   margin-bottom: 2.313rem;
+  @media (max-width: 1042px) {
+    align-items: flex-end;
+    gap: 0.5rem;
+  }
 `
 export const Pesquisa = styled.div`
   display: flex;
@@ -18,6 +22,9 @@ export const Pesquisa = styled.div`
   min-width: 23.75rem;
 
   background-color: ${(props) => props.theme.blue};
+  @media (max-width: 1042px) {
+    min-width: 0;
+  }
 `
 export const InputPesquisa = styled.input`
   background-color: transparent;
@@ -28,15 +35,13 @@ export const InputPesquisa = styled.input`
   font-style: normal;
   font-weight: 100;
   font-size: 1.125rem;
+  width: 140px;
   &::placeholder {
     color: ${(props) => props.theme.gray};
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 100;
     font-size: 1.125rem;
-  }
-  &:focus {
-    box-shadow: none;
   }
 `
 
@@ -56,6 +61,10 @@ export const Ordination = styled.div`
     padding: 0.813rem 0.625rem 0.813rem 1rem;
     border-radius: 0.5rem;
   }
+  @media (max-width: 1042px) {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
 `
 
 export const OrdinationSelect = styled.select`
@@ -70,7 +79,4 @@ export const OrdinationSelect = styled.select`
   font-size: 1.125rem;
 
   cursor: pointer;
-  &:focus {
-    box-shadow: none;
-  }
 `

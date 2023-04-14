@@ -4,13 +4,17 @@ export const ContainerMain = styled.main`
   display: flex;
   flex-direction: column;
   padding: 2.813rem 8.125rem 2.75rem;
+  @media (max-width: 1042px) {
+    padding: 1rem 0.5rem;
+    align-items: center;
+  }
 `
 
 export const DivCards = styled.div`
   display: flex;
   gap: 1.25rem;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
 
   margin-bottom: 2.5rem;
 `
