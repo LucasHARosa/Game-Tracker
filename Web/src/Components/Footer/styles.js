@@ -12,13 +12,13 @@ export const ContainerFooter = styled.footer`
   div:first-child {
     display: flex;
     justify-content: center;
-    height: 2rem;
+    height: 32.14px;
+    margin-bottom: 12.86px;
   }
   img {
-    width: 2rem;
-    height: 2rem;
+    width: 31.66px;
+    height: 32.14px;
 
-    margin-bottom: 0.75rem;
     align-content: center;
   }
   p {
@@ -47,12 +47,12 @@ export const ContainerFooter = styled.footer`
     gap: 0.75rem;
     padding: 22px 8px 15px 8px;
     div:first-child {
-      height: 1.375rem;
-      margin-bottom: 0.125rem;
+      height: 25px;
+      margin-bottom: 2px;
     }
     img {
-      width: 1.375rem;
-      height: 1.375rem;
+      width: 24.63px;
+      height: 25px;
     }
     p {
       font-size: 0.625rem;

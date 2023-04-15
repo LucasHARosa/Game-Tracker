@@ -5,13 +5,14 @@ export const ContainerHeader = styled.header`
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
-  padding: 0.5rem 8.125rem;
-  gap: 0.75rem;
+  padding: 9px 0 8.86px 130px;
+  gap: 11.34px;
 
   background-color: ${(props) => props.theme.blue};
+  height: 50px;
   img {
-    width: 2rem;
-    height: 2rem;
+    width: 31.66px;
+    height: 32.14px;
   }
   div {
     display: flex;
@@ -31,5 +32,6 @@ export const ContainerHeader = styled.header`
   }
   @media (max-width: 768px) {
     justify-content: center;
+    padding: 9px 0 8.86px 0;
   }
 `

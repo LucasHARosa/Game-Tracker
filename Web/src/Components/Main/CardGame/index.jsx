@@ -15,20 +15,17 @@ export function CardGame(props) {
   const [showDetails, setShowDetails] = useState(false)
   let descont = ''
 
-  // Verifica se o jogo está em promoção
-  // Se sim, retorna o preço normal e o preço em promoção
-  // Se não, retorna o preço normal
-  // Se o preço for 0, retorna o preço como grátis
+  // Check if the game is on sale
   function handlePrice() {
     if (props.salePrice === null) {
       descont = props.normalPrice.toString()
-      return <p>${props.normalPrice}</p>
+      return <p>$ {props.normalPrice}</p>
     } else if (props.salePrice === 0) {
       descont = 'GRÁTIS'
       return (
         <>
-          <p>${props.salePrice}</p>
-          <p>${props.normalPrice}</p>
+          <p>$ {props.salePrice}</p>
+          <p>$ {props.normalPrice}</p>
         </>
       )
     } else {
@@ -37,14 +34,14 @@ export function CardGame(props) {
       descont = '-' + percent.toFixed(0).toString() + '%'
       return (
         <>
-          <p>${props.salePrice}</p>
-          <p>${props.normalPrice}</p>
+          <p>$ {props.salePrice}</p>
+          <p>$ {props.normalPrice}</p>
         </>
       )
     }
   }
 
-  // Verifica se o jogo tem imagem
+  // Check if the game has an image
   function handleImg() {
     if (props.thumb === null) {
       return <img src="/sem-imagem.png" alt="" />

@@ -7,15 +7,12 @@ import { CardContext } from '../../contexts/CardContext'
 import { FilterAndOrdenation } from './FilterAndOrdenation'
 
 export function Main() {
-  // Puxa os dados do contexto
   const { cards } = useContext(CardContext)
 
-  // Limita o numero de cards renderizados
-  const [limitRender, setLimitRender] = useState(9)
+  const [limitRenderCards, setLimitRenderCards] = useState(9)
 
-  // Carrega mais cards
-  function loadMore() {
-    setLimitRender(limitRender + 3)
+  function loadMoreCards() {
+    setLimitRenderCards(limitRenderCards + 3)
   }
 
   return (
@@ -23,25 +20,24 @@ export function Main() {
       <FilterAndOrdenation />
 
       <ContainerCards>
-        {cards.slice(0, limitRender).map((card, index) => {
+        {cards.slice(0, limitRenderCards).map((card, index) => {
           return (
             <CardGame
               key={index}
               title={card.title}
               normalPrice={card.normalPrice}
               salePrice={card.salePrice}
-              savings={card.savings}
               thumb={card.thumb}
             />
           )
         })}
       </ContainerCards>
       <ContainerLoadButton>
-        {limitRender >= cards.length && (
+        {limitRenderCards >= cards.length && (
           <button disabled>Espere novos jogos</button>
         )}
-        {limitRender < cards.length && (
-          <button onClick={loadMore}>Carregar Mais</button>
+        {limitRenderCards < cards.length && (
+          <button onClick={loadMoreCards}>Carregar Mais</button>
         )}
       </ContainerLoadButton>
     </ContainerMain>

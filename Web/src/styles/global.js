@@ -13,14 +13,13 @@ export const GlobalStyle = createGlobalStyle`
   body {
     
     background: linear-gradient(45deg, #0B1641 0%, #C70160 100%);
-    color: #FFFFFF;
     -webkit-font-smoothing: antialiased;
     cursor: default;
   }
-  body, textarea, button, p, a {
+  body, textarea, button, p, a, input, select {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: 1rem;
+    font-size: 1.125rem;
     color: #FFFFFF;
 
   }

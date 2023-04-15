@@ -15,10 +15,11 @@ export const ContainerCard = styled.div`
   }
 
   @media (max-width: 768px) {
-    border-radius: 0.398rem;
+    border-radius: 6.37px;
     width: 19rem;
     img {
       height: 95px;
+      border-radius: 6.37px 6.37px 0 0;
     }
   }
 `
@@ -36,10 +37,12 @@ export const Title = styled.h3`
   font-size: 1.5rem;
 
   margin-bottom: 0.875rem;
+  height: 28px;
 
   @media (max-width: 768px) {
     font-size: 1.125rem;
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
+    height: 19px;
   }
 `
 
@@ -87,8 +90,14 @@ const BaseButton = styled.button`
 
 export const DetailsButton = styled(BaseButton)`
   background-color: ${(props) => props.theme.pink};
+  width: 7.25rem;
+
   &:hover {
     background-color: ${(props) => props.theme['pink-hover']};
+  }
+  @media (max-width: 768px) {
+    width: 5.75rem;
+    border-radius: 6.15px;
   }
 `
 
@@ -102,6 +111,7 @@ export const PurchaseButton = styled(BaseButton)`
     padding: 8px 7px 7px 8px;
     width: 4rem;
     height: 31px;
+    border-radius: 6.37px;
   }
 `
 

@@ -24,7 +24,7 @@ export function FilterAndOrdenation() {
 
   const { register, watch } = useForm()
 
-  // Muda o valor do tipo de ordenação
+  // change the sorting
   function handleChange(event) {
     const selectOption = event.target.value
     switch (selectOption) {

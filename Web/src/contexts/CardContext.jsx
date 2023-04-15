@@ -3,12 +3,10 @@ import { createContext, useState, useEffect } from 'react'
 export const CardContext = createContext({})
 
 export function CardContextProvider({ children }) {
-  // Auxilia na renderização dos cards na filtragem por titulo
   const [cardExternal, setCardExternal] = useState([{}])
-  // Armazena os dados da API
   const [cards, setCards] = useState([{}])
 
-  // Busca os dados da API
+  // Fetch API data
   useEffect(() => {
     async function fetchCard() {
       const response = await fetch(
@@ -21,7 +19,6 @@ export function CardContextProvider({ children }) {
     fetchCard()
   }, [])
 
-  // Filtra os cards pelo titulo
   function OrderAlphabet() {
     const newCard = [...cards].sort((a, b) => {
       if (a.title < b.title) {
@@ -35,7 +32,6 @@ export function CardContextProvider({ children }) {
     setCards(newCard)
   }
 
-  // Filtra os cards pelo preço
   function OrderPrice() {
     const newCard = [...cards].sort((a, b) => {
       if (parseFloat(a.salePrice) < parseFloat(b.salePrice)) {
@@ -49,7 +45,6 @@ export function CardContextProvider({ children }) {
     setCards(newCard)
   }
 
-  // Filtra os cards pelo preço
   function OrderPriceDesc() {
     const newCard = [...cards].sort((a, b) => {
       if (parseFloat(a.salePrice) > parseFloat(b.salePrice)) {
@@ -63,7 +58,6 @@ export function CardContextProvider({ children }) {
     setCards(newCard)
   }
 
-  // Filtra os cards pelo desconto
   function OrderDiscount() {
     const newCard = [...cards].sort((a, b) => {
       const percentA =
@@ -81,7 +75,6 @@ export function CardContextProvider({ children }) {
     setCards(newCard)
   }
 
-  // Filtra os cards pelo titulo
   function FilterTitle(title) {
     const newCard = cardExternal.filter((card) => {
       return card.title.toLowerCase().includes(title.toLowerCase())
