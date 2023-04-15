@@ -3,32 +3,27 @@ import styled from 'styled-components'
 export const ContainerMain = styled.main`
   display: flex;
   flex-direction: column;
-  padding: 2.813rem 8.125rem 2.75rem;
-  @media (max-width: 1042px) {
-    padding: 1rem 0.5rem;
+  padding: 45px 130px 44px;
+
+  @media (max-width: 768px) {
+    padding: 1rem 0.5rem 2rem 0.5rem;
     align-items: center;
   }
 `
 
-export const DivCards = styled.div`
+export const ContainerCards = styled.div`
   display: flex;
   gap: 1.25rem;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
 
   margin-bottom: 2.5rem;
+  @media (max-width: 768px) {
+    margin-bottom: 1.875rem;
+  }
 `
 
-export const Title = styled.h1`
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 2.25rem;
-
-  margin-bottom: 1.375rem;
-`
-
-export const LoadButton = styled.div`
+export const ContainerLoadButton = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,7 +32,7 @@ export const LoadButton = styled.div`
     background-color: ${(props) => props.theme.blue};
     border: 0;
     border-radius: 0.5rem;
-    padding: 1rem;
+    padding: 15px 0 14px 0;
     width: 23.75rem;
     cursor: pointer;
 
@@ -54,6 +49,11 @@ export const LoadButton = styled.div`
       cursor: default;
       box-shadow: none;
       color: ${(props) => props.theme.gray};
+    }
+  }
+  @media (max-width: 768px) {
+    button {
+      width: 19rem;
     }
   }
 `

@@ -3,8 +3,8 @@ import {
   ContainerInfo,
   Title,
   ContainerButtons,
-  ButtonCompra,
-  ButtonDetails,
+  PurchaseButton,
+  DetailsButton,
   PriceDiv,
   ContainerDetails,
 } from './styles'
@@ -59,12 +59,12 @@ export function CardGame(props) {
       <ContainerInfo>
         <Title>{props.title}</Title>
         <ContainerButtons>
-          <ButtonDetails onClick={() => setShowDetails(!showDetails)}>
+          <DetailsButton onClick={() => setShowDetails(!showDetails)}>
             DETALHES
-          </ButtonDetails>
+          </DetailsButton>
           <div>
             <PriceDiv>{handlePrice()}</PriceDiv>
-            <ButtonCompra>{descont}</ButtonCompra>
+            <PurchaseButton>{descont}</PurchaseButton>
           </div>
         </ContainerButtons>
       </ContainerInfo>

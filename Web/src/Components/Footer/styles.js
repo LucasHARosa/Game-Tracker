@@ -4,7 +4,7 @@ export const ContainerFooter = styled.footer`
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  padding: 3.813rem 8.125rem;
+  padding: 61px 130px;
 
   background-color: ${(props) => props.theme.blue};
   bottom: 0;
@@ -12,6 +12,7 @@ export const ContainerFooter = styled.footer`
   div:first-child {
     display: flex;
     justify-content: center;
+    height: 2rem;
   }
   img {
     width: 2rem;
@@ -41,10 +42,14 @@ export const ContainerFooter = styled.footer`
       font-size: 0.875rem;
     }
   }
-  @media (max-width: 1042px) {
+  @media (max-width: 768px) {
     align-items: center;
     gap: 0.75rem;
-    padding: 0.75rem 0.5rem;
+    padding: 22px 8px 15px 8px;
+    div:first-child {
+      height: 1.375rem;
+      margin-bottom: 0.125rem;
+    }
     img {
       width: 1.375rem;
       height: 1.375rem;
@@ -57,6 +62,9 @@ export const ContainerFooter = styled.footer`
       flex-direction: column;
       gap: 0.5rem;
       align-items: center;
+      a {
+        font-size: 0.75rem;
+      }
     }
   }
 `

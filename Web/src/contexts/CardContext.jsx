@@ -22,7 +22,7 @@ export function CardContextProvider({ children }) {
   }, [])
 
   // Filtra os cards pelo titulo
-  function OrderAlfabetic() {
+  function OrderAlphabet() {
     const newCard = [...cards].sort((a, b) => {
       if (a.title < b.title) {
         return -1
@@ -94,7 +94,7 @@ export function CardContextProvider({ children }) {
       value={{
         cards,
         FilterTitle,
-        OrderAlfabetic,
+        OrderAlphabet,
         OrderPrice,
         OrderPriceDesc,
         OrderDiscount,

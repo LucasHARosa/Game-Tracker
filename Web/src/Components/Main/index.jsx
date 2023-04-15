@@ -1,4 +1,4 @@
-import { ContainerMain, DivCards, Title, LoadButton } from './styles'
+import { ContainerMain, ContainerCards, ContainerLoadButton } from './styles'
 
 import { useContext, useState } from 'react'
 
@@ -20,9 +20,9 @@ export function Main() {
 
   return (
     <ContainerMain>
-      <Title>Ofertas</Title>
       <FilterAndOrdenation />
-      <DivCards>
+
+      <ContainerCards>
         {cards.slice(0, limitRender).map((card, index) => {
           return (
             <CardGame
@@ -35,15 +35,15 @@ export function Main() {
             />
           )
         })}
-      </DivCards>
-      <LoadButton>
+      </ContainerCards>
+      <ContainerLoadButton>
         {limitRender >= cards.length && (
           <button disabled>Espere novos jogos</button>
         )}
         {limitRender < cards.length && (
           <button onClick={loadMore}>Carregar Mais</button>
         )}
-      </LoadButton>
+      </ContainerLoadButton>
     </ContainerMain>
   )
 }

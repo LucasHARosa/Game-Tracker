@@ -1,12 +1,12 @@
 import {
-  Pesquisa,
-  ContainerPesquisa,
-  InputPesquisa,
+  Search,
+  ContainerSearch,
+  InputSearch,
   OrdinationSelect,
   Ordination,
+  ContainerSection,
+  Title,
 } from './styles'
-
-import { MagnifyingGlass } from 'phosphor-react'
 
 import { useForm } from 'react-hook-form'
 import { useContext, useEffect } from 'react'
@@ -15,7 +15,7 @@ import { CardContext } from '../../../contexts/CardContext'
 
 export function FilterAndOrdenation() {
   const {
-    OrderAlfabetic,
+    OrderAlphabet,
     OrderPrice,
     OrderPriceDesc,
     OrderDiscount,
@@ -28,17 +28,17 @@ export function FilterAndOrdenation() {
   function handleChange(event) {
     const selectOption = event.target.value
     switch (selectOption) {
-      case 'desconto':
+      case 'discount':
         OrderDiscount()
         break
-      case 'menor':
+      case 'lowestPrice':
         OrderPrice()
         break
-      case 'maior':
+      case 'biggestPrice':
         OrderPriceDesc()
         break
-      case 'alfabetica':
-        OrderAlfabetic()
+      case 'alphabet':
+        OrderAlphabet()
         break
       default:
         break
@@ -55,27 +55,30 @@ export function FilterAndOrdenation() {
   }, [getValues])
 
   return (
-    <ContainerPesquisa>
-      <Pesquisa>
-        <MagnifyingGlass size={24} weight="light" />
-        <InputPesquisa
-          type="text"
-          placeholder="Procurar"
-          {...register('procurar')}
-        />
-      </Pesquisa>
+    <ContainerSection>
+      <Title>Ofertas</Title>
+      <ContainerSearch>
+        <Search>
+          <img src="/search.svg" alt="" />
+          <InputSearch
+            type="text"
+            placeholder="Procurar"
+            {...register('procurar')}
+          />
+        </Search>
 
-      <Ordination>
-        <p>Ordernar por:</p>
-        <div>
-          <OrdinationSelect name="ordination" onChange={handleChange}>
-            <option value="desconto">% de Desconto</option>
-            <option value="menor">Menor Preço</option>
-            <option value="maior">Maior Preço</option>
-            <option value="alfabetica">Título</option>
-          </OrdinationSelect>
-        </div>
-      </Ordination>
-    </ContainerPesquisa>
+        <Ordination>
+          <p>Ordernar por:</p>
+          <div>
+            <OrdinationSelect name="ordination" onChange={handleChange}>
+              <option value="discount">% de Desconto</option>
+              <option value="lowestPrice">Menor Preço</option>
+              <option value="biggestPrice">Maior Preço</option>
+              <option value="alphabet">Título</option>
+            </OrdinationSelect>
+          </div>
+        </Ordination>
+      </ContainerSearch>
+    </ContainerSection>
   )
 }
