@@ -12,7 +12,7 @@ Projeto desenvolvido para um processo seletivo. Consiste em um catálogo de jogo
 </a>
 
 ## Para executar o projeto
-Faça o clone do projeto, instale as dependências e execute
+Faça o clone do projeto, na pasta "Web" instale as dependências e execute da seguinte forma
 ```sh
     $ npm install
     $ npm run dev
