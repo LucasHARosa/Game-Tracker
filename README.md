@@ -10,6 +10,14 @@ Projeto desenvolvido para um processo seletivo. Consiste em um catálogo de jogo
 <a href="https://www.figma.com/file/1OChnhd0T3HQdGP1TWHNbX/Game-Tracker-Prot%C3%B3tipo?node-id=0-1&t=Ogvtm7mrA87GFhry-0
 ">https://www.figma.com/file/1OChnhd0T3HQdGP1TWHNbX/Game-Tracker-Prot%C3%B3tipo?node-id=0-1&t=Ogvtm7mrA87GFhry-0
 </a>
+
+## Para executar o projeto
+Faça o clone do projeto, instale as dependências e execute
+```sh
+    $ npm install
+    $ npm run dev
+```
+
 ## Funcionalidades da Aplicação:
 
 * Listar jogos em 4 tipos de ordens diferentes
@@ -19,6 +27,7 @@ Projeto desenvolvido para um processo seletivo. Consiste em um catálogo de jogo
   * Valor de promoção
 
 # Web
+Aplicação desenvolvida seguindo rigorosamente o layout do figma
 <p align="center">
   <img heigth="400" src="./Imagens/Game_tracker_web.gif">
 </p>
@@ -28,7 +37,15 @@ Projeto desenvolvido para um processo seletivo. Consiste em um catálogo de jogo
 
 # Mobile
 
-Em construção...
+
 <p align="center">
-  <img src="https://media.giphy.com/media/xZsLh7B3KMMyUptD9D/giphy.gif">
+  <img src="./Imagens/Game_tracker_mobile.gif">
+</p>
+
+# Responsividade 
+
+A reponsividade da aplicação em tamanhos intermediários ao Layout foi pensada para se adequar de maneira melhor ao desing do projeto e pode ser vista a seguir:
+
+<p align="center">
+  <img src="./Imagens/Responsividade.gif">
 </p>
