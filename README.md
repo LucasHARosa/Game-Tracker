@@ -5,7 +5,7 @@
 
 # Game tracker - Ecommerce
 
-Projeto desenvolvido para um processo seletivo. Consiste em um catálogo de jogos seguindo o LAYOUT disponível no endereço:
+O projeto consiste em um catálogo de jogos seguindo o LAYOUT disponível no endereço:
  
 <a href="https://www.figma.com/file/1OChnhd0T3HQdGP1TWHNbX/Game-Tracker-Prot%C3%B3tipo?node-id=0-1&t=Ogvtm7mrA87GFhry-0
 ">https://www.figma.com/file/1OChnhd0T3HQdGP1TWHNbX/Game-Tracker-Prot%C3%B3tipo?node-id=0-1&t=Ogvtm7mrA87GFhry-0
