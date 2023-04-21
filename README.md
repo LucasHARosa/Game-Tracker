@@ -1,9 +1,9 @@
-![GitHub repo size](https://img.shields.io/github/repo-size/LucasHARosa/Game_tracker_Ecommerce)
-![GitHub language count](https://img.shields.io/github/languages/count/LucasHARosa/Game_tracker_Ecommerce)
-![GitHub top language](https://img.shields.io/github/languages/top/LucasHARosa/Game_tracker_Ecommerce)
-![GitHub last commit](https://img.shields.io/github/last-commit/LucasHARosa/Game_tracker_Ecommerce)
+![GitHub repo size](https://img.shields.io/github/repo-size/LucasHARosa/Game_tracker)
+![GitHub language count](https://img.shields.io/github/languages/count/LucasHARosa/Game_tracker)
+![GitHub top language](https://img.shields.io/github/languages/top/LucasHARosa/Game_tracker)
+![GitHub last commit](https://img.shields.io/github/last-commit/LucasHARosa/Game_tracker)
 
-# Game tracker - Ecommerce
+# Game tracker
 
 O projeto consiste em um catálogo de jogos seguindo o LAYOUT disponível no endereço:
  
