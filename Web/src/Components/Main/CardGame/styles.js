@@ -38,6 +38,8 @@ export const Title = styled.h3`
 
   margin-bottom: 0.875rem;
   height: 28px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 
   @media (max-width: 768px) {
     font-size: 1.125rem;

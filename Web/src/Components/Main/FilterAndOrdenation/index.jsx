@@ -12,6 +12,7 @@ import { useForm } from 'react-hook-form'
 import { useContext, useEffect } from 'react'
 
 import { CardContext } from '../../../contexts/CardContext'
+import search from '../../../assets/search.svg'
 
 export function FilterAndOrdenation() {
   const {
@@ -59,7 +60,7 @@ export function FilterAndOrdenation() {
       <Title>Ofertas</Title>
       <ContainerSearch>
         <Search>
-          <img src="/search.svg" alt="" />
+          <img src={search} alt="search" />
           <InputSearch
             type="text"
             placeholder="Procurar"

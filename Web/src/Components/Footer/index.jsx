@@ -1,10 +1,11 @@
 import { ContainerFooter } from './styles'
+import Logo from '../../assets/Logo.svg'
 
 export function Footer() {
   return (
     <ContainerFooter>
       <div>
-        <img src="/Logo.svg" alt="" />
+        <img src={Logo} alt="Logo" />
       </div>
 
       <p>
