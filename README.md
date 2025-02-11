@@ -1,7 +1,7 @@
-![GitHub repo size](https://img.shields.io/github/repo-size/LucasHARosa/Game_tracker)
-![GitHub language count](https://img.shields.io/github/languages/count/LucasHARosa/Game_tracker)
-![GitHub top language](https://img.shields.io/github/languages/top/LucasHARosa/Game_tracker)
-![GitHub last commit](https://img.shields.io/github/last-commit/LucasHARosa/Game_tracker)
+![GitHub repo size](https://img.shields.io/github/repo-size/LucasHARosa/Game-Tracker)
+![GitHub language count](https://img.shields.io/github/languages/count/LucasHARosa/Game-Tracker)
+![GitHub top language](https://img.shields.io/github/languages/top/LucasHARosa/Game-Tracker)
+![GitHub last commit](https://img.shields.io/github/last-commit/LucasHARosa/Game-Tracker)
 
 # Game tracker
 
